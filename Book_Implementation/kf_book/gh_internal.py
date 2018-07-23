@@ -41,13 +41,14 @@ def plot_hypothesis1():
         plt.tight_layout()
 
 
+
 def plot_hypothesis2():
     with book_plots.figsize(y=2.5):
         plt.figure()
         plt.errorbar(range(1, 11), [169, 170, 169,171, 170, 171, 169, 170, 169, 170],
                      xerr=0, yerr=6, fmt='bo', capthick=2, capsize=10)
         plt.plot([1, 10], [169, 170.5], color='g', ls='--')
-        
+
         plt.xlim(0, 11)
         plt.ylim(150, 185)
         plt.xlabel('day')
@@ -84,8 +85,8 @@ def plot_hypothesis4():
         plt.xlabel('day')
         plt.ylabel('weight (lbs)')
         book_plots.show_legend()
-    
-    
+
+
 def plot_hypothesis5():
     weights = [158.0, 164.2, 160.3, 159.9, 162.1, 164.6,
            169.6, 167.4, 166.4, 171.0, 171.2, 172.6]
@@ -103,8 +104,8 @@ def plot_hypothesis5():
         plt.xlabel('day')
         plt.ylabel('weight (lbs)')
         book_plots.show_legend()
-        
-    
+
+
 def plot_estimate_chart_1():
     with figsize(y=2.5):
         plt.figure()
@@ -183,6 +184,7 @@ def plot_gh_results(weights, estimates, predictions, time_step=0):
     book_plots.set_labels(x='day', y='weight (lbs)')
     plt.xlim([-1, n+1])
     plt.ylim([156.0, 173])
+
 
 
 def print_results(estimates, prediction, weight):
