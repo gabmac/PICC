@@ -41,7 +41,6 @@ def plot_hypothesis1():
         plt.tight_layout()
 
 
-
 def plot_hypothesis2():
     with book_plots.figsize(y=2.5):
         plt.figure()
@@ -184,7 +183,6 @@ def plot_gh_results(weights, estimates, predictions, time_step=0):
     book_plots.set_labels(x='day', y='weight (lbs)')
     plt.xlim([-1, n+1])
     plt.ylim([156.0, 173])
-
 
 
 def print_results(estimates, prediction, weight):

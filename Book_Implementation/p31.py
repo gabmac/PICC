@@ -5,9 +5,8 @@
 from kf_book.book_plots import figsize
 #importa a biblioteca com o nome de plt
 import matplotlib.pyplot as plt
+from kf_book.gh_internal import plot_hypothesis1
 import kf_book.gh_internal as gh
-
-
 
 #pesos medidos
 weights = [158.0, 164.2, 160.3, 159.9, 162.1, 164.6,
@@ -46,4 +45,6 @@ initial_guess = 160
 
 estimates,predictions = predict_using_gain_guess(weight = initial_guess, gain_rate = 1, do_print = True)
 #transforma em um grafico a medicao, as previsoes e as estimativas
-gh.plot_gh_results(weights, estimates, predictions)
+gh.plot_gh_results(weights, estimates, predictions,0)
+#codigo que indica que e para mostra os graficos
+plt.show()
