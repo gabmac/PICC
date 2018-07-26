@@ -12,6 +12,10 @@ from kf_book.gh_internal import plot_g_h_results
 #cria um vetor em cima do seu valor inicial
 #e os proximos valores sao gerados com passos
 #ja dado, porém com uma aceleracao
+#IMPORTANTE: o filto implementado nao responde
+#bem a variação de aceleracao e por isso
+# a resposta desse código não estará perto
+# do esperado
 #############################################
 def gen_data(x0, dx, count, noise_factor, accel = 0):
     vector = []
@@ -25,9 +29,9 @@ def gen_data(x0, dx, count, noise_factor, accel = 0):
 #exemplo do livro
 #############################################
 
-predictions = []
-zs = gen_data(x0=10., dx=0., count=20, noise_factor=0, accel=2.)
-data = filter(data=zs, x0=10., dx=0., g=0.2, h=0.02, dt = 1.0)
-plt.xlim([0, 20])
-plot_g_h_results(measurements=zs, filtered_data=data)
-plt.show()
+#predictions = []
+#zs = gen_data(x0=10., dx=0., count=20, noise_factor=0, accel=2.)
+#data = filter(data=zs, x0=10., dx=0., g=0.2, h=0.02, dt = 1.0)
+#plt.xlim([0, 20])
+#plot_g_h_results(measurements=zs, filtered_data=data)
+#plt.show()
