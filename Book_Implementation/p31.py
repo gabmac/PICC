@@ -45,6 +45,6 @@ initial_guess = 160
 
 estimates,predictions = predict_using_gain_guess(weight = initial_guess, gain_rate = 1, do_print = True)
 #transforma em um grafico a medicao, as previsoes e as estimativas
-gh.plot_gh_results(weights, estimates, predictions,0)
+gh.plot_gh_results(weights, estimates, predictions,0)# o 0 esta faltando no livro o que faz código nao funcionar
 #codigo que indica que e para mostra os graficos
-plt.show()
+plt.show()#falta em todos os plots para que o código funcione.
